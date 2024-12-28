@@ -40,6 +40,6 @@ jobs:
           ./target/release/cli \
             -u "${{ secrets.USERNAME }}" \
             -p "${{ secrets.PASSWORD }}" \
-            -m 5 \
+            -m 13 \
             -r ./assets/map.geojson \
             -t "$TIME"
