@@ -35,7 +35,7 @@ jobs:
         run: |
           for i in $(seq 1 3);
           do
-            RANDOM_SEC=$((RANDOM * $i % 14400))
+            RANDOM_SEC=$((RANDOM * i % 14400))
                                                                                               
             TIME="$(TZ="Asia/Shanghai" date -d "-$RANDOM_SEC seconds" +"%Y-%m-%d %H:%M:%S")"
                                                                         
